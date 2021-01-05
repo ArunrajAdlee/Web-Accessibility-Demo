@@ -1,6 +1,6 @@
 Web-Accessibility Demo
 <br/>
-Barebones app to demonstrate web accessibility features like skip-navigation links, proper use of semantic html, screenreader-friendly tags, and more.
+- Barebones app to demonstrate web accessibility features like skip-navigation links, proper use of semantic html, screenreader-friendly tags, and more.
 
 # Stack
 
