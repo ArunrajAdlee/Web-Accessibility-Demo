@@ -5,7 +5,7 @@ Web-Accessibility Demo
 # Stack
 
 - React & React Hooks
-- HTML/JS/CSS/LESS/SASS
+- HTML/JS/SASS
 
 # To run
 
