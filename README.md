@@ -1,10 +1,11 @@
 Web-Accessibility Demo
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
+Barebones app to demonstrate web accessibility features like skip-navigation links, proper use of semantic html, screenreader-friendly tags, and more.
 
-# Accessibility Resources
+# Stack
 
-https://reactjs.org/docs/accessibility.html
-https://dev.to/rajajaganathan/why-skip-nav-link-is-important-14bc
+- React & React Hooks
+- HTML/JS/CSS/LESS/SASS
 
 # To run
 
@@ -16,3 +17,8 @@ https://dev.to/rajajaganathan/why-skip-nav-link-is-important-14bc
 
 Utilizing TMDB API
 Docs: https://developers.themoviedb.org/3/getting-started/introduction
+
+# Accessibility Resources
+
+https://reactjs.org/docs/accessibility.html
+https://dev.to/rajajaganathan/why-skip-nav-link-is-important-14bc
