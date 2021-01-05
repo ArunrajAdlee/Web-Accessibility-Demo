@@ -1,0 +1,22 @@
+.header-container {
+  background-color: #222;
+
+  .header-nav {
+      padding: 0.5rem 0 0.5rem 0;
+      width: 65%;
+      margin: 0 auto 0 auto;
+
+      @media screen and (max-width: $lg-size) {
+          width: 80%;
+      }
+  
+      @media screen and (max-width: $md-size) {
+          width: 90%;
+      }
+      
+      .nav-link {
+          padding: 0.5rem 0 0.5rem 0;     
+          color: white;   
+      }
+  }
+}

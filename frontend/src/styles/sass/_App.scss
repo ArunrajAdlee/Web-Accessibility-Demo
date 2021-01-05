@@ -1,0 +1,83 @@
+html, #root, body {
+  height: 100%
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: $title-font !important;
+  word-break: break-word;
+}
+
+.fl-r {
+  float: right !important;
+}
+
+.fl-l {
+  float: left !important;
+}
+
+.align-center {
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.invalid-feedback {
+  text-align: left;
+}
+
+.styled-button {
+  border: none !important;
+}
+
+.styled-input {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  font-weight: bold !important;
+  &.btn-link {
+    &:focus {
+      text-decoration: none;
+      box-shadow: none;
+    }
+
+    vertical-align: unset;
+  }
+}
+
+.default-layout-content-container {
+  flex: 1 0 auto;
+  margin: 50px auto 100px auto;
+  width: 65%;
+
+  @media screen and (max-width: $lg-size) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $md-size) {
+    width: 90%;
+  }
+}
+
+.back-link {
+  color:black;
+  font-weight: bold;
+}

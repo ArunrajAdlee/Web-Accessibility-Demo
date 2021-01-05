@@ -1,0 +1,32 @@
+.movie-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  & .ind-movie-container { 
+    padding-bottom: 50px;
+    flex-basis: 0;
+
+    & .ind-movie-poster { 
+      & img {
+        width: 250px;
+      }
+    }
+  }
+}
+
+.movie-detail-container {
+  & .movie-detail {
+    display: flex;
+    margin-top:50px;
+
+    & .imdb-btn {
+      background-color: rgb(245, 197, 24);
+    }
+  }
+
+  & .movie-tagline {
+    text-align: center;
+    margin-top: 35px;
+  }
+}
