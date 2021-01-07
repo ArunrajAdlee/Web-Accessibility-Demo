@@ -116,3 +116,14 @@ code {
     margin-left: 30%;
   }
 }
+
+.error-page {
+
+  & .error-image {
+    font-size: 200px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+  text-align: center;
+  margin-top: 10vh;
+}
