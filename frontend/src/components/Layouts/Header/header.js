@@ -11,7 +11,7 @@ const Header = () => {
         <Navbar.Brand>
           <Link
             className="nav-link mt-1"
-            to={{ pathname: '/' }}
+            to={{ pathname: '/home' }}
           >
             <h4>SOEN387 Web Accessibility Demo</h4>
           </Link>

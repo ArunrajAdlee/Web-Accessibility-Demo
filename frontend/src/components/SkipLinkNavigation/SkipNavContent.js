@@ -1,3 +1,5 @@
-export const SkipNavContent = ({ id, ...props }) => {
-    return <div id={id} {...props} />;
+const SkipNavContent = ({ id, ...props }) => {
+  return <div id={id} {...props} />;
 };
+
+export default SkipNavContent;

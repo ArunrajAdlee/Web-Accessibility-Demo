@@ -1,19 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { server, api } from '../../server';
-import { useParams } from 'react-router-dom';
+import { Redirect, useParams } from 'react-router-dom';
+import { useHistory } from 'react-router'
 import { Spinner, Badge, Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faStar } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom'
 
 const MovieDetail = (props) => {
   const [movieDetail, setMovieDetail] = useState({});
+  const history = useHistory();
   const { id } = useParams();
 
   useEffect(() => {
     const getMovieDetail = async () => {
-      const resp = await server.get(api.get_detail_movie + id);
-      if (resp.data) {
-        setMovieDetail(resp.data);
+      try {
+        const resp = await server.get(api.get_detail_movie + id);
+        if (resp.data) {
+          setMovieDetail(resp.data);
+        }
+      }
+      catch (e) {
+        history.push('/error404')
       }
     }
 
@@ -25,7 +33,10 @@ const MovieDetail = (props) => {
       ? <Spinner />
       :
       <>
-        <a href="/" className="back-link"><FontAwesomeIcon icon={faArrowLeft} className="mr-3" />Back to Dashboard</a>
+        <Link
+          className="back-link"
+          to={{ pathname: '/home' }}
+        ><FontAwesomeIcon icon={faArrowLeft} className="mr-3" />Back to Dashboard</Link>
         <div className="movie-detail-container">
           <div className="movie-detail">
             <img alt="" src={`https://image.tmdb.org/t/p/w780/${movieDetail.backdrop_path}`} />
