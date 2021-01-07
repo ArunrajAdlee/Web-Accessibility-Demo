@@ -9,7 +9,6 @@ const Dashboard = () => {
   useEffect(() => {
     const getRecentMovies = async () => {
       const resp = await server.get(api.get_list_nowPlaying)
-
       if (resp.data) {
         setListOfNowPlaying(resp.data.results)
       }
@@ -22,7 +21,9 @@ const Dashboard = () => {
 
   return (
     !listOfNowPlaying.length
-      ? <Spinner />
+      ? <Spinner className="centered-spinner" animation="grow" variant="dark" role="status">
+        <span className="sr-only">Loading...</span>
+      </Spinner>
       :
       <>
         <h1 className="mb-5 align-center">Latest Films</h1>

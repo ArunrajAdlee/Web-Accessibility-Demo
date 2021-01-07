@@ -105,3 +105,14 @@ code {
   width: auto;
   z-index: 1001;
 }
+
+.centered-spinner {
+  width: 300px !important;
+  height: 300px !important;
+  margin-left: 40%;
+  margin-top: 15%;
+
+  @media screen and (max-width: $md-size) {
+    margin-left: 30%;
+  }
+}

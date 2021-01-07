@@ -30,7 +30,9 @@ const MovieDetail = (props) => {
 
   return (
     Object.getOwnPropertyNames(movieDetail).length === 0
-      ? <Spinner />
+      ? <Spinner className="centered-spinner" animation="grow" variant="dark" role="status">
+        <span className="sr-only">Loading...</span>
+      </Spinner>
       :
       <>
         <Link
