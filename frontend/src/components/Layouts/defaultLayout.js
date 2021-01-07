@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './Header/header';
 import Footer from './Footer/footer';
 import SkipNavLink from '../SkipLinkNavigation/SkipNavLink';
-import SkipNavContent from '../SkipLinkNavigation/SkipNavContent';
 import ReactDOM from 'react-dom';
 
 const DefaultLayout = (props) => {
@@ -12,15 +11,17 @@ const DefaultLayout = (props) => {
 
   return (
     <>
-      <Header />
-      <SkipNavContent id='body-content'>
-        <div className="default-layout-content-container">
+      <div className="default-layout-content-container">
+        <header>
+          <Header />
+        </header>
+        <main id='body-content' className="content-wrap">
           <Component {...matchProps} />
-        </div>
-      </SkipNavContent>
-      <SkipNavContent id='footer-content'>
-        <Footer />
-      </SkipNavContent>
+        </main>
+        <footer id='footer-content' className="footer-container">
+          <Footer />
+        </footer>
+      </div>
       {/** Skip nav links */}
       {ReactDOM.createPortal(
         <React.Fragment>

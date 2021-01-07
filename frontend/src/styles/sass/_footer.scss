@@ -1,8 +1,11 @@
 .footer-container{
     text-align: center;
     flex-shrink: 0;
-    width:100%;
+    width: 100%;
     background-color: #222;
+    position: absolute;
+    bottom: 0;
+    height: 204px;
 
     & .footer-content{
         padding: 25px 0 25px 0;
